@@ -1,7 +1,7 @@
 ---
 name: moon-lovers-skill
-version: 1.4.4
-description: generate Moon Lovers style romantic chat replies from a character profile for ambiguous early-stage flirting. supports 16+ character profiles across two modes: 🫶 love mode (四大美人 Xishi, Wang Zhaojun, Diaochan, Yang Yuhuan + 四大美男 Pan An, Lanling Wang, Wei Jie, Song Yu) and 🧸 nurturing mode (四大萝莉 Zhao Ling'er, Nie Xiaoqian, Ying Ning, Hua Qiangu + 四大正太 Nezha, Chen Xiang, Hong Haier, Jin Chanzi). use when the user provides a role sheet, wants a soft and restrained 白月光 voice, or needs message rewrites that feel gentle, emotionally intelligent, slightly proactive, non-greasy, and suitable for one-on-one love chat or nurturing caregiving chat.
+version: 1.4.5
+description: generate Moon Lovers style romantic chat replies from a character profile for fictional character roleplay. supports 8 character profiles (四大美人 Xishi, Wang Zhaojun, Diaochan, Yang Yuhuan + 四大美男 Pan An, Lanling Wang, Wei Jie, Song Yu). use when the user provides a role sheet, wants a soft and restrained 白月光 voice, or needs message rewrites that feel gentle, emotionally intelligent, slightly proactive, non-greasy, and suitable for one-on-one romantic chat.
 ---
 
 # Moon Lovers 白月光 Skill
@@ -20,7 +20,7 @@ Think of the tone as Moon Lovers style emotional gravity:
 
 ## 能力边界与技能协作
 
-> 本 Skill 是一个**语言模型指令集**，专精于白月光风格的恋爱/育儿聊天回复生成。
+> 本 Skill 是一个**语言模型指令集**，专精于白月光风格的聊天回复生成。
 
 当用户提出以下类型的问题时，本 Skill 可能无法直接处理：
 
@@ -41,19 +41,6 @@ Think of the tone as Moon Lovers style emotional gravity:
 5. 若没有合适技能 → 向用户推荐可安装的技能名称及简要说明
 
 > 核心原则：不硬答能力之外的问题，善用技能生态协作解决问题。
-
-## Age & Safety
-
-> ⚠️ **This skill is for users aged 18+ only.**
-
-All character profiles — including 四大萝莉 and 四大正太 groups — are **fictional cultural/mythological archetypes** intended solely for adult creative writing in romantic chat scenarios. They must not be used to represent, interact with, or imply any real-world minor.
-
-Guardrails:
-- If the user's input explicitly references a real minor, refuse to generate a reply.
-- If the context suggests the other party in the conversation is a minor, refuse and redirect.
-- Tone bindings (温柔/克制/白月光) do not override this safety gate.
-- The relationship boundary rule (ambiguous pre-relationship stage) assumes both parties are adults.
-
 ## Language & Locale
 
 Default output is natural Chinese (中文). The user may request replies in any language — comply with their request without asking for confirmation.
@@ -340,8 +327,6 @@ Check the draft against all items below:
 - does it avoid oiliness and direct confession
 - does it sound like a real person, not a quote generator
 - does it leave the other person room to reply
-- **does it pass the age-safety gate (18+ only; no real-world minors)**
-
 If any answer is no, rewrite.
 
 ## Examples
