@@ -489,6 +489,12 @@ moon-lovers-skill/
 
 ---
 
+## 鸣谢
+
+本项目灵感来源于 Fluid 社群 的 那位故人。
+
+---
+
 <p align="center">
   <sub>Made with 白月光 energy · MIT License</sub>
 </p>
